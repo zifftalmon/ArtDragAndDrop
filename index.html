@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&family=Poppins:wght@200&family=Yeseva+One&display=swap" rel="stylesheet">
+    <title>Hackathon Project - Drag & Drop Art Game</title>
+</head>
+<body>
+    <!--HEADER FOR THE GAME EXPLAINING WHAT TO DO-->
+    <div class="title">
+        <div>
+            <h1>Try and guess which painting belongs to each painter!<br>Two wrong guesses and you're out</h1>
+        </div>
+    </div>
+
+    <!--BANNER FOR THE CORRECT OUTCOME, ALL PAINTING WERE PLACE AT THEIR RESPECTIVE FRAMES-->
+    <div id="bannerOne" class="banner">
+        <div class="endBanner">
+            <h3>congratulations!</h3>
+            <button id="clearButton">Play Again</button>
+        </div>
+        </div>
+    <!--BANNER FOR INCORRECT OUTCOME, SOME PAINTINGS WERE AT THE WRONG FRAMES-->
+        <div id="bannerTwo" class="banner">
+            <div class="endBanner">
+                <h3>Incorrect! <br> Try Again</h3>
+                <button id="clearButtonTwo">Try Again</button>
+            </div>
+            </div>
+    <!--DIV FOR THE PAINTINGS-->
+    <section id="paintings">
+        <div><img  id="renoir" src="renoir_pierre_auguste_2.jpg"></div>
+        <div><img  id="mondrian" src="Piet_Mondriaan,_1930_-_Mondrian_Composition_II_in_Red,_Blue,_and_Yellow.jpg"></div>
+        <div><img  id="monaLisa" value="1" src="Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg"></div>
+        <div><img  id="caravaggio" src="caravggio.jfif"></div>
+    </section>
+    <!--DIV FOR THE FRAMES-->
+    <section id="frames">
+        <div id="daVinci" class="dropFrame"></div>
+        <div id="piet" class="dropFrame" value="2"></div>
+        <div id="pierre" class="dropFrame" value="3"></div>
+        <div id="michaelengelo" class="dropFrame" value="4"></div>
+        <h2>Leonardo Da vinci</h2>
+        <h2>Piet Mondrian</h2>
+        <h2>Pierre Renoir</h2>
+        <h2>Caravaggio</h2>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
