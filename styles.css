@@ -1,16 +1,21 @@
 /*STYLE FOR THE BODY*/
 * {
     margin: 0;
+    padding: 0;
     background-color: #52ac8f;
 }
+body {
+    border: 3px solid red;
+    width: 100%;
+}
 /*STYLE FOR TITLE*/
-.title {
+h1 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: center;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     color: #5e2e6b;
     width: 100%;
 }
@@ -18,7 +23,7 @@
 #paintings {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(1fr));
+    grid-template-rows: repeat(auto-fill, minmax( 1fr));
     justify-items: center;
     align-items: center;
 }
@@ -66,17 +71,24 @@
     margin-bottom: 150px;
     font-family: 'Poppins', sans-serif;
 }
+.bannerDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /*STYLE FOR THE BANNER DIVS*/
 .banner {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 29em;
-    top: 12em;
     visibility: hidden;
     background-color: #2F4858;
-    border-radius: 20px;;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    margin: 2em;
+    z-index: 999;
 }
 /*STYLE FOR THE CONTENT OF THE BANNER DIVS*/
 .endBanner {
@@ -85,8 +97,6 @@
     justify-content: center;
     align-items: center;
     justify-self: center;
-    width: 300px;
-    height: 200px;
     font-family: 'poppins', sans-serif;
     font-size: 35px;
     padding: 20px;
@@ -110,10 +120,10 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 667px) {
-    .title {
-        margin-left: 17em;
+    h1 {
+        /* margin-left: 17em; */
         /* border: 3px solid red; */
-        font-size: 15px;
+        font-size: 25px;
     }
     #paintings {
         border: 3px solid red;
@@ -123,3 +133,4 @@
         height: 100px;
     }
 
+}
