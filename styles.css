@@ -127,9 +127,9 @@ h1 {
         grid-template-columns: repeat(4,95px);
     }
     h2 {
-        font-size: 12px;
+        font-size: 18px;
         text-align: center;
-        margin-top: -15px;
+        margin-top: -25px;
     }
     #renoir {
         width: 75px;
@@ -152,5 +152,40 @@ h1 {
     .dropFrame {
         width: 70px;
         height: 70px;
+    }
+}
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+    #paintings {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #frames {
+        grid-template-columns: repeat(4,205px);
+    }
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+    #renoir {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+    }
+    #mondrian {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+    }#monaLisa {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+    }#caravaggio {
+        width: 150px;
+        height: 150px;
+        margin: 20px;
+    }
+    .dropFrame {
+        width: 150px;
+        height: 150px;
     }
 }
