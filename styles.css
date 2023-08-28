@@ -55,7 +55,6 @@ h1 {
     justify-items: center;
     align-items: center;
     place-items: center; 
-    border: 3px solid red;
 }
 /*STYLE FOR EACH DROP ZONE*/
 .dropFrame {
@@ -156,7 +155,7 @@ h1 {
         height: 70px;
     }
 }
-@media screen and (min-width: 668px) and (max-width: 1024px) {
+@media screen and (min-width: 668px) and (max-width: 1180px) {
     #paintings {
         display: flex;
         justify-content: space-evenly;
@@ -171,20 +170,20 @@ h1 {
     #renoir {
         width: 150px;
         height: 150px;
-        margin: 20px;
+        margin: 30px;
     }
     #mondrian {
         width: 150px;
         height: 150px;
-        margin: 20px;
+        margin: 30px;
     }#monaLisa {
         width: 150px;
         height: 150px;
-        margin: 20px;
+        margin: 30px;
     }#caravaggio {
         width: 150px;
         height: 150px;
-        margin: 20px;
+        margin: 30px;
     }
     .dropFrame {
         width: 150px;
