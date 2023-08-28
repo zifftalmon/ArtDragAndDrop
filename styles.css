@@ -53,7 +53,9 @@ h1 {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
     justify-items: center;
-    align-items: center; 
+    align-items: center;
+    place-items: center; 
+    border: 3px solid red;
 }
 /*STYLE FOR EACH DROP ZONE*/
 .dropFrame {
@@ -154,7 +156,7 @@ h1 {
         height: 70px;
     }
 }
-@media screen and (min-width: 668px) and (max-width: 1368px) {
+@media screen and (min-width: 668px) and (max-width: 1024px) {
     #paintings {
         display: flex;
         justify-content: space-evenly;
